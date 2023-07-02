@@ -9,3 +9,16 @@ body {
 ::-webkit-scrollbar {
   display: none; /* Internet Explorer and Edge */
 }
+
+.animate-scroll {
+  animation: scroll 25s linear infinite alternate;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw - 0.75rem));
+  }
+}
