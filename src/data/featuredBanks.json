@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HDFCBANK",
+    "value": "1,657.10",
+    "percentages": "0.40%",
+    "type": "profit"
+  },
+  {
+    "name": "NIFTYBANK",
+    "value": "41,559.40",
+    "percentages": "0.01%",
+    "type": "profit"
+  },
+  {
+    "name": "BAJFINANCE",
+    "value": "6,435.50",
+    "percentages": "0.30%",
+    "type": "loss"
+  },
+  {
+    "name": "BHARTIARTL",
+    "value": "771.95",
+    "percentages": "0.69%",
+    "type": "profit"
+  },
+  {
+    "name": "HINDUNILVR",
+    "value": "2,577.50",
+    "percentages": "0.36%",
+    "type": "loss"
+  }
+]
