@@ -10,6 +10,14 @@ body {
   display: none; /* Internet Explorer and Edge */
 }
 
+.page-min-h {
+  min-height: calc(100vh - 136px);
+}
+
+.page-min-h-sm {
+  min-height: calc(100vh - 171.2px);
+}
+
 .animate-scroll {
   animation: scroll 25s linear infinite alternate;
 }
