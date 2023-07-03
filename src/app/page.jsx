@@ -1,9 +1,11 @@
+import HomePage from "@/components/Homepage";
+import { fetchMessages } from "@/utils/fetchMessages";
+import { fetchStories } from "@/utils/fetchStories";
 
-export default function Home() {
-
+export default async function Home() {
+  const messages = await fetchMessages();
+  const stories = await fetchStories();
   return (
-    <main className="flex w-full overflow-x-hidden overflow-y-auto page-min-h sm:page-min-h-sm ">
-      Home page
-    </main>
+    <HomePage messages={messages} stories={stories} />
   )
 }
