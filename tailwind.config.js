@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,6 +8,16 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'xxs': '435px',
+      'xs': '565px',
+      'sm': '685px',
+      'md': '888px',
+      'lg': '998px',
+      'xl': '1280px',
+      '2xl': '1536px',
+
+    },
     extend: {
       colors: {
         blue: {
