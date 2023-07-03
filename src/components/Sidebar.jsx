@@ -6,7 +6,6 @@ import { BsFillChatSquareTextFill } from 'react-icons/bs'
 import { AiFillDollarCircle } from 'react-icons/ai'
 import { BiSolidDownArrow, BiSolidRightArrow } from 'react-icons/bi'
 
-
 //  More data can be added like links is, etc.
 const SidebarLinks = [
     {
@@ -30,6 +29,12 @@ const SidebarLinks = [
 ]
 
 const Sidebar = ({ menuOpen, setMenuOpen, currentPage, setCurrentPage }) => {
+
+    const toggleMenu = (e) => {
+        e.preventDefault()
+        e.stopPropagation();
+        setMenuOpen(prev => !prev)
+    }
     return (
         <>
             <div className={`fixed z-40 top-[140px] sm:top-[171.2px] left-0 w-60 sidebar-min-height bg-blue-primary text-white duration-300 transition-transform overflow-y-scroll ${menuOpen ? "translate-x-0" : "-translate-x-60"}`}>
@@ -46,7 +51,7 @@ const Sidebar = ({ menuOpen, setMenuOpen, currentPage, setCurrentPage }) => {
                             <BsFillChatSquareTextFill className='w-4 h-4' />
                             <div className='pb-1'>Disscussion Forum</div>
                             <div className="absolute inset-y-0 grid right-2 place-items-center">
-                            <BiSolidDownArrow className='w-2 h-2 ' />
+                                <BiSolidDownArrow className='w-2 h-2 ' />
                             </div>
                         </li>
                         <li onClick={() => setCurrentPage("market")} className={`flex items-center gap-2 px-4 py-[10px] cursor-pointer ${currentPage === "market" && "bg-blue-secondary"}`}>
@@ -59,7 +64,7 @@ const Sidebar = ({ menuOpen, setMenuOpen, currentPage, setCurrentPage }) => {
                     </ul>
                 </nav>
             </div>
-            <button onClick={() => setMenuOpen(prev => !prev)} className={`z-40 text-white fixed grid w-3 h-14 sm:w-5 sm:h-20 bg-blue-primary place-items-center bottom-1/3 -translate-y-full transition-all duration-300 ${menuOpen ? "left-60" : "left-0"} rounded-r-[0.2rem] sm:rounded-r-md`}>
+            <button onClick={toggleMenu} className={`z-40 text-white fixed grid w-3 h-14 sm:w-5 sm:h-20 bg-blue-primary place-items-center bottom-1/3 -translate-y-full transition-all duration-300 ${menuOpen ? "left-60" : "left-0"} rounded-r-[0.2rem] sm:rounded-r-md`}>
                 <BiSolidRightArrow className='w-3 h-3 sm:w-4 sm:h-4 p-[1px]' />
             </button>
         </>
