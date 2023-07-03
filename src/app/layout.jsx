@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         <Header />
         <>
           {children}
-          <div className='h-[42px] xxs:h-[60px] xs:h-0'/>
+          <div className='h-[50px] xxs:h-[68px] xs:h-8 sm:h-0'/>
         </>
         <BottomMenu />
         <Add />
