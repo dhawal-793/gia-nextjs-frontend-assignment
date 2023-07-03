@@ -27,21 +27,21 @@ const navLinks = [
     {
         name: "mark",
         icon: BsUiChecks
-    },
+    }
 ]
 
 const BottomMenu = () => {
 
     const [activeLink, setActiveLink] = useState("home")
     return (
-        <nav className='fixed bottom-0 w-screen h-fit sm:hidden bg-blue-primary '>
-            <ul className='flex items-center justify-center w-full py-1 text-white'>
+        <nav className='fixed bottom-0 z-50 w-screen h-fit xs:hidden bg-blue-primary'>
+            <ul className='flex items-center justify-center w-full text-white'>
                 {navLinks.map(link => {
                     const Icon = link.icon
                     return (
                         <li key={link.name} onClick={() => setActiveLink(link.name)}
-                            className={`grid place-items-center  border-b-4  w-1/5 py-3 cursor-pointer ${activeLink === link.name ? "border-b-red-500" : "border-b-transparent"}`}>
-                            <Icon className='w-6 h-6' /></li>
+                            className={`grid place-items-center border-b-[3px] xxs:border-b-4  w-full py-3 xxs:py-4 cursor-pointer ${activeLink === link.name ? "border-b-red-500" : "border-b-transparent"}`}>
+                            <Icon className='w-4 h-4 xxs:h-6 xxs:w-6' /></li>
                     )
                 })}
             </ul>
