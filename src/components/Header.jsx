@@ -5,12 +5,12 @@ import FeaturedCompanies from './FeaturedCompanies'
 const Header = () => {
     return (
         <>
-            <div className='fixed top-0 w-screen'>
+            <div className='fixed top-0 z-50 w-screen'>
                 <Navbar />
                 <FeaturedBanks />
                 <FeaturedCompanies />
             </div>
-            <div className="h-[84px] sm:h-[171.2px]"></div>
+            <div className="h-[140px] sm:h-[171.2px]"/>
         </>
     )
 }
