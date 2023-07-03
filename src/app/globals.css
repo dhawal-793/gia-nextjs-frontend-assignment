@@ -10,12 +10,12 @@ body {
   display: none; /* Internet Explorer and Edge */
 }
 
-.page-min-h {
-  min-height: calc(100vh - 136px);
-}
-
-.page-min-h-sm {
-  min-height: calc(100vh - 171.2px);
+.sidebar-min-height {
+  /* 
+  total height of the page - height of header - height of bottomMenu
+  100vh - 140px - 42.2px
+  */
+  min-height: calc(100vh - 182.2px);
 }
 
 .animate-scroll {
@@ -28,5 +28,33 @@ body {
   }
   100% {
     transform: translateX(calc(-100% + 100vw - 0.75rem));
+  }
+}
+
+@media (min-width: 435px) {
+  .sidebar-min-height {
+    /* 
+  total height of the page - height of header - height of bottomMenu
+  100vh - 140px - 60px
+  */
+    min-height: calc(100vh - 200px);
+  }
+}
+@media (min-width: 565px) {
+  .sidebar-min-height {
+    /* 
+  total height of the page - height of header
+  100vh - 140px 
+  */
+    min-height: calc(100vh - 140px);
+  }
+}
+@media (min-width: 685px) {
+  .sidebar-min-height {
+    /* 
+  total height of the page - height of header
+  100vh - 171.2px
+  */
+    min-height: calc(100vh - 171.2px);
   }
 }
