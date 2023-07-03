@@ -2,12 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
 ::-webkit-scrollbar {
   display: none; /* Internet Explorer and Edge */
+}
+
+#discussion::-webkit-scrollbar {
+  display: block;
+  background-color: #e6e6e6;
+  width: 8px;
+}
+#discussion::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 99999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-min-height {
