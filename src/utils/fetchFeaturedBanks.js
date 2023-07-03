@@ -13,7 +13,7 @@ export const getFeaturedBanks = async () => {
         //     return data;
 
 
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve(), 1000));
         return featuredBanks
     } catch (error) {
         console.error(error);

@@ -1,6 +1,6 @@
 import messages from '@/data/discussion.json';
 
-export const fetchMessages =  () => {
+export const fetchMessages = async () => {
     try {
         //     const response = await fetch('https://raw.githubusercontent.com/dhawal-793/gia-assignment-dummy-data/main/discussion.json');
         //     if (!response.ok) {
@@ -13,7 +13,7 @@ export const fetchMessages =  () => {
         //     return data;
 
 
-        // await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve(), 1000));
         return messages
     } catch (error) {
         console.error(error);

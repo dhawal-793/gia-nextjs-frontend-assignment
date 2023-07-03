@@ -1,6 +1,6 @@
 import stories from '@/data/marketStories.json';
 
-export const fetchStories =  () => {
+export const fetchStories = async() => {
     try {
         //     const response = await fetch('https://raw.githubusercontent.com/dhawal-793/gia-assignment-dummy-data/main/discussion.json');
         //     if (!response.ok) {
@@ -13,7 +13,7 @@ export const fetchStories =  () => {
         //     return data;
 
 
-        // await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve(), 1000));
         return stories
     } catch (error) {
         console.error(error);
