@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-1.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "/images/image-1.jpg",
+    "timestamp": "",
+    "sector": 1
+  },
+  {
+    "id": "2",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-2.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "",
+    "timestamp": "",
+    "sector": 2
+  },
+  {
+    "id": "3",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-2.webp"
+    },
+    "text": "Consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "/images/image-2.jpg",
+    "timestamp": "",
+    "sector": 3
+  },
+  {
+    "id": "4",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-1.webp"
+    },
+    "text": "Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "",
+    "timestamp": "",
+    "sector": 2
+  },
+  {
+    "id": "5",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-1.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "/images/image-3.png",
+    "timestamp": "",
+    "sector": 3
+  },
+  {
+    "id": "6",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-2.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "",
+    "timestamp": "/images/image-1.jpg",
+    "sector": 1
+  },
+  {
+    "id": "7",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-1.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "",
+    "timestamp": "",
+    "sector": 2
+  },
+  {
+    "id": "8",
+    "author": {
+      "name": "Lorem Ipsum",
+      "image": "/images/user-2.webp"
+    },
+    "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id hic dicta reiciendis doloribus eius corrupti veniam alias consequuntur saepe delectus.Lorem, ipsum dolor sit amet consectetur.",
+    "likes": "2k",
+    "views": "2k",
+    "comments": "2k",
+    "image": "",
+    "timestamp": "",
+    "sector": 1
+  }
+]
