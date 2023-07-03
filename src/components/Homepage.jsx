@@ -14,7 +14,7 @@ const HomePage = ({ messages, stories }) => {
 
             <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <div className="w-full ">
-                <div className="fixed inset-x-0 top-[140px] flex w-full text-white h-fit sm:hidden">
+                <div className="fixed z-30 inset-x-0 top-[140px] flex w-full text-white h-fit sm:hidden">
                     <button onClick={() => setCurrentPage("discussion")} className={`w-1/2 border-b-4 grid place-items-center py-1 ${currentPage === "discussion" ? "border-b-red-500 bg-blue-secondary" : "bg-blue-primary border-b-transparent"}`}>
                         Discussion Forum
                     </button>
