@@ -18,6 +18,10 @@ body {
   min-height: calc(100vh - 182.2px);
 }
 
+.search-shadow {
+  box-shadow: 0 0 #0000, 0 0 #0000, inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 .animate-scroll {
   animation: scroll 25s linear infinite alternate;
 }
