@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="flex flex-1">
                 <SearchBox />
                 <div className="flex items-center w-fit md:pr-2 md:gap-[0.8rem] lg:gap-5 sm:w-[38%] md:w-[42%] justify-end">
-                    <Link href="/contact" className="hidden md:block">Contact Us</Link>
+                    <Link href="/" className="hidden md:block">Contact Us</Link>
                     <Account />
                 </div>
             </div>
